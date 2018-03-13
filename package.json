@@ -1,0 +1,26 @@
+{
+  "name": "blog-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "blog": "./bin/blog"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  },
+  "dependencies": {
+    "commander": "^2.15.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "markdown-it": "^8.4.1"
+  }
+}
