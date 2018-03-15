@@ -3,6 +3,7 @@
 const program = require('commander');
 
 const previewAction = require('../lib/preview');
+const buildAction = require('../lib/build');
 
 const version = '0.0.1';
 program.version(version);
@@ -35,6 +36,7 @@ program
   .description('生成整站静态HTML')
   .option('-o, --output <dir>', '生成的静态HTML存放目录')
   .action((dir, options) => {
+    buildAction(dir, options);
     console.log('create %s, output %s', dir, options.output);
   });
 
