@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/assets/style.css">
-  <title>Document</title>
+  <title>
+    <%= config.title %>
+  </title>
 </head>
 
 <body>
@@ -20,6 +22,20 @@
   <div class='post-content'>
     <%- post.content %>
   </div>
+  <!-- JiaThis Button BEGIN -->
+  <div class="jiathis_style">
+    <a class="jiathis_button_tsina"></a>
+    <a class="jiathis_button_weixin"></a>
+    <a class="jiathis_button_cqq"></a>
+    <a class="jiathis_button_douban"></a>
+    <a class="jiathis_button_fb"></a>
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_pocket"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+    <a class="jiathis_counter_style"></a>
+  </div>
+  <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js" charset="utf-8"></script>
+  <!-- JiaThis Button END -->
 </body>
 
 </html>
